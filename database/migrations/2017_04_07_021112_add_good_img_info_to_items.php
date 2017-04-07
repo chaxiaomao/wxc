@@ -14,7 +14,7 @@ class AddGoodImgInfoToItems extends Migration
     {
         //
         Schema::table('items', function (Blueprint $table) {
-            $table->varchar('good_info_img',20);
+            $table->string('good_info_img',20);
         });
     }
 

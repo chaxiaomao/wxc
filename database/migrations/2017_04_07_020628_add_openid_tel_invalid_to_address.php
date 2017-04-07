@@ -15,7 +15,7 @@ class AddOpenidTelInvalidToAddress extends Migration
         //
         Schema::table('address', function (Blueprint $table) {
             $table->integer('tel');
-            $table->varchar('openid',250);
+            $table->string('openid',255);
             $table->tinyinteger('invalid')->default(0);
         });
 
